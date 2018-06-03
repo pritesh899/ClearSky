@@ -1,0 +1,5 @@
+# pack-refs with: peeled fully-peeled sorted 
+53d82e80f6a7c41dc15c627cf357d3d97a35b7ff refs/heads/master
+53d82e80f6a7c41dc15c627cf357d3d97a35b7ff refs/heads/module-complete
+53d82e80f6a7c41dc15c627cf357d3d97a35b7ff refs/heads/module-container
+53d82e80f6a7c41dc15c627cf357d3d97a35b7ff refs/heads/module-rest
