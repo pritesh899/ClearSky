@@ -24,7 +24,6 @@ public class WeatherRepositoryImpl implements WeatherRepository{
 
 	@Override
 	public Weather WeatherByCity(String city) {
-		//return em.find(Weather.class, city);
 		TypedQuery<Weather> query = em.createNamedQuery("Weather.findByPropertyAndCity", Weather.class);
 		query.setParameter("pCity", city);
 		List<Weather> propertys = query.getResultList();
