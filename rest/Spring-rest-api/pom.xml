@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.pritesh.egen</groupId>
-  <artifactId>Spring-rest-api</artifactId>
+  <artifactId>SpringRestApi</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>Spring-rest-api</name>
+  <name>SpringRestApi</name>
   <url>http://maven.apache.org</url>
 
   <properties>
