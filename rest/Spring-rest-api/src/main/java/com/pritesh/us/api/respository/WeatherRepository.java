@@ -14,4 +14,10 @@ public interface WeatherRepository {
 	public Weather weatherByCityByPropertyDateNTime( String city,String date);
 	
 	public Weather createWeather(Weather weather);
+
+	public Weather findOne(String id);
+
+	public Weather updateWeather(Weather existing);
+
+	public void deleteWeather(Weather weather);
 }

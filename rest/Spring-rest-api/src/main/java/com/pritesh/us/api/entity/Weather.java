@@ -23,6 +23,17 @@ public class Weather {
 	@Id
 	private String weatherid;
 	private String temperature;
+	private String city;
+	private String humidity;
+	private String wind;
+	private String date;
+	private String sunrise;
+	private String sunset;
+	private String windDirection;
+	private String feelsLike;
+	private String pressure;
+	private String visibilty;
+	
 	public String getTemperature() {
 		return temperature;
 	}
@@ -31,11 +42,54 @@ public class Weather {
 		this.temperature = temperature;
 	}
 
-	private String city;
-	private String humidity;
-	private String wind;
-	private String date;
-	
+	public String getSunrise() {
+		return sunrise;
+	}
+
+	public void setSunrise(String sunrise) {
+		this.sunrise = sunrise;
+	}
+
+	public String getSunset() {
+		return sunset;
+	}
+
+	public void setSunset(String sunset) {
+		this.sunset = sunset;
+	}
+
+	public String getWindDirection() {
+		return windDirection;
+	}
+
+	public void setWindDirection(String windDirection) {
+		this.windDirection = windDirection;
+	}
+
+	public String getFeelsLike() {
+		return feelsLike;
+	}
+
+	public void setFeelsLike(String feelsLike) {
+		this.feelsLike = feelsLike;
+	}
+
+	public String getPressure() {
+		return pressure;
+	}
+
+	public void setPressure(String pressure) {
+		this.pressure = pressure;
+	}
+
+	public String getVisibilty() {
+		return visibilty;
+	}
+
+	public void setVisibilty(String visibilty) {
+		this.visibilty = visibilty;
+	}
+
 	public String getWeatherid() {
 		return weatherid;
 	}

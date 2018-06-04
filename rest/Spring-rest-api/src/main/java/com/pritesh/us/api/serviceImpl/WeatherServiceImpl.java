@@ -62,4 +62,38 @@ public class WeatherServiceImpl implements WeatherService {
 		return weatherRespository.createWeather(weather);
 	}
 
+	@Transactional(readOnly=true)
+	@Override
+	public Weather updateWeather(String id, Weather weather) {
+		Weather existing = weatherRespository.findOne(id);
+		if(existing == null)
+		{
+			throw new BadRequestException("Weather with "+id+" does not exist");
+		}
+		return weatherRespository.updateWeather(weather);
+	}
+
+	@Override
+	@Transactional
+	public void deleteWeather(String id) {
+		Weather existing = weatherRespository.findOne(id);
+		if(existing == null)
+		{
+			throw new BadRequestException("Weather with "+id+" does not exist");
+		}
+	
+		weatherRespository.deleteWeather(existing);
+	}
+
+	@Override
+	@Transactional
+	public Weather findOne(String id) {
+		Weather existing = weatherRespository.findOne(id);
+		if(existing == null)
+		{
+			throw new BadRequestException("Weather with "+id+" does not exist");
+		}
+		return existing;
+	}
+
 }

@@ -13,7 +13,13 @@ public interface WeatherService {
 	
 	public Weather weatherByCityByPropertyDateNTime( String city,String date);
 	
+	public Weather findOne(String id);
+	
 	public Weather createWeather( Weather weather);
+	
+	public Weather updateWeather(String id,Weather weather);
+	
+	public void deleteWeather(String id);
 	
 
 }
